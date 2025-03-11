@@ -27,3 +27,23 @@ function agregarAmigo() {
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
     resultado.innerHTML = `<li>El amigo secreto es: ${amigos[indiceAleatorio]}</li>`;
   }
+
+function editarAmigo(index) {
+    const listaAmigos = document.getElementById("listaAmigos");
+    const amigo = listaAmigos.children[index];
+    const nombreOriginal = amigo.textContent;
+  
+    // Crear un input para editar el nombre
+    const inputEditar = document.createElement("input");
+    inputEditar.value = nombreOriginal;
+    amigo.innerHTML = ""; // Limpiar el contenido del <li>
+    amigo.appendChild(inputEditar);
+  
+    // Actualizar el nombre al presionar Enter
+    inputEditar.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        const nuevoNombre = inputEditar.value.trim();
+        amigo.innerHTML = nuevoNombre; // Actualizar el <li>
+      }
+    });
+}
