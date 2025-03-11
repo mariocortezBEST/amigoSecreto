@@ -160,3 +160,41 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+/* Para pantallas pequeñas (hasta 768px de ancho) */
+@media (max-width: 768px) {
+    .header-banner {
+        flex-direction: column; /* Apila los elementos del banner */
+        text-align: center; /* Centra el texto */
+    }
+
+    .main-title {
+        font-size: 36px; /* Reduce el tamaño del título */
+    }
+
+    .input-wrapper {
+        flex-direction: column; /* Apila la entrada y el botón */
+    }
+
+    .input-name {
+        border-radius: 25px; /* Redondea la entrada por completo */
+    }
+
+    .button-add {
+        border-radius: 25px; /* Redondea el botón por completo */
+        margin-top: 10px; /* Agrega un margen superior */
+    }
+}
+
+/* Para pantallas medianas (entre 768px y 1024px de ancho) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-title {
+        font-size: 42px; /* Ajusta el tamaño del título */
+    }
+
+    /* Otros ajustes para pantallas medianas */
+}
+
+/* Para pantallas grandes (más de 1024px de ancho) */
+@media (min-width: 1024px) {
+    /* Ajustes para pantallas grandes */
+}
