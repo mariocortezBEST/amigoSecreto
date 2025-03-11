@@ -1,3 +1,7 @@
+let contadorSorteos = 0; // Inicializa el contador
+function actualizarContador() {
+  document.getElementById("contadorSorteos").textContent = contadorSorteos;
+}
 function agregarAmigo() {
     const inputAmigo = document.getElementById("amigo");
     const listaAmigos = document.getElementById("listaAmigos");
@@ -26,4 +30,7 @@ function agregarAmigo() {
   
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
     resultado.innerHTML = `<li>El amigo secreto es: ${amigos[indiceAleatorio]}</li>`;
+    // Incrementar y mostrar el contador de sorteos
+    contadorSorteos++;
+    actualizarContador();
   }
