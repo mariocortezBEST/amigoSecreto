@@ -13,7 +13,8 @@ function agregarAmigo() {
     listaAmigos.appendChild(nuevoAmigo);
     inputAmigo.value = ""; // Limpia el campo de texto
   }
-  
+
+  let contadorSorteos = 0; // inicializa el contador
   function sortearAmigo() {
     const listaAmigos = document.getElementById("listaAmigos");
     const resultado = document.getElementById("resultado");
@@ -25,8 +26,8 @@ function agregarAmigo() {
     }
   
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
-    resultado.innerHTML = `<li>El amigo secreto es: ${amigos[indiceAleatorio]}</li>`;
-  }
+      contadorSorteos++; //incrementa el contador
+    resultado.innerHTML = `<li>Sorteo ${contadorSorteos}: El amigo secreto es: ${amigos[indiceAleatorio]}</li>`;
 
 function editarAmigo(index) {
     const listaAmigos = document.getElementById("listaAmigos");
