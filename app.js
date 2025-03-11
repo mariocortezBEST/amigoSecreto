@@ -28,7 +28,7 @@ function agregarAmigo() {
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
       contadorSorteos++; //incrementa el contador
     resultado.innerHTML = `<li>Sorteo ${contadorSorteos}: El amigo secreto es: ${amigos[indiceAleatorio]}</li>`;
-
+/*
 function editarAmigo(index) {
     const listaAmigos = document.getElementById("listaAmigos");
     const amigo = listaAmigos.children[index];
@@ -47,4 +47,4 @@ function editarAmigo(index) {
         amigo.innerHTML = nuevoNombre; // Actualizar el <li>
       }
     });
-}
+}*/
