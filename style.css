@@ -166,6 +166,7 @@ ul {
         flex-direction: column; /* Apila los elementos del banner */
         text-align: center; /* Centra el texto */
         margin-left:25px;
+        margin-right:25px;
     }
 
     .main-title {
@@ -173,7 +174,7 @@ ul {
     }
     .input-section {
         margin-left:25px;
-        margin-right:auto; 
+        margin-right:25px;; 
     }
 
     .input-wrapper {
