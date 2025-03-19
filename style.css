@@ -170,6 +170,9 @@ ul {
     .main-title {
         font-size: 36px; /* Reduce el tamaño del título */
     }
+    .input-section {
+        margin-left: 5px;  
+    }
 
     .input-wrapper {
         flex-direction: column; /* Apila la entrada y el botón */
